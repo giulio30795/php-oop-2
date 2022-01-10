@@ -2,14 +2,14 @@
 
 class Utente  {
     protected $nome;
-    protected $cognome;
+    protected $prodotto;
     protected $prezzo;
 
     //constructor
 
-    public function __construct($nome, $cognome, $età) {
+    public function __construct($nome, $prodotto, $prezzo) {
         $this->nome = $nome;
-        $this->cognome = $cognome;
+        $this->prodotto = $prodotto;
         $this->prezzo = $prezzo;
     }
 
@@ -21,8 +21,8 @@ class Utente  {
     }
 
     public function getSurname(){
-        $cognome = $this->cognome;
-        return $cognome;
+        $prodotto = $this->prodotto;
+        return $prodotto;
     }
 
     public function getPrice(){
